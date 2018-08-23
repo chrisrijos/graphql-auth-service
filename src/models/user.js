@@ -14,6 +14,10 @@ module.exports = pgPool => {
         });
     },
 
+    login ({ credentials }) {
+      console.log(this.arguments, credentials);
+    },
+
     addNewVisitedPlace ({ userId, place }) {
       return pgPool.query(`
         insert into visitedplaces (user_id, place) values ($1, $2) returning *

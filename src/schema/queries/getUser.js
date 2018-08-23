@@ -1,6 +1,7 @@
 const { GraphQLID, GraphQLNonNull } = require('graphql')
-const UserType = require('../types/users')
 
+
+const UserType = require('../types/users')
 const user = require('../../models/user')
 
 module.exports = {

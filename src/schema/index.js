@@ -2,6 +2,7 @@ const { GraphQLSchema, GraphQLObjectType } = require('graphql')
 
 // Import queries
 const GetUser = require('./queries/getUser')
+const Login = require('./queries/login')
 
 // Import mutations
 const AddNewUserMutation = require('./mutations/addUser')
@@ -10,7 +11,8 @@ const AddVisitedPlaceMutation = require('./mutations/addVisitedPlaces')
 const RootQueryType = new GraphQLObjectType({
   name: 'RootQuery',
   fields: () => ({
-    user: GetUser
+    user: GetUser,
+    login: Login
   })
 })
 
