@@ -15,7 +15,6 @@ create table visitedplaces(
 
 -- INSERT INTO "users" ("username", "email") 
 -- VALUES
--- (E'chris rijos','rijos.christopher@gmail.com'),
 -- (E'demo1','demo1@demo.com'),
 -- (E'demo2','demo2@demo.com'),
 -- (E'demo3','demo3@demo.com');
